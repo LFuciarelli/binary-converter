@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary/Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Convert binary to text and vice versa</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Enter text in binary or in plain text:
+            </p>
+            <p>
+                <input type="text" name="txttext" id="txttext">
+            </p>
+            <p>
+                <input type="radio" name="radoption" id="binary" checked>
+                <label for="binary">Binary input (Eg. 01001000 01100101 01101100 01101100 01101111 
+                0100000 01110111 01101111 01110010 01101100 01100100 0100001)</label>
+            </p>
+            <p>
+                <input type="radio" name="radoption" id="text">
+                <label for="text">Text input (Eg. Hello world!)</label>
+            </p>
+            <p>
+                <input type="button" value="Convert" onclick="convert()">
+            </p>
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

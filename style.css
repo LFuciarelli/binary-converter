@@ -1,0 +1,52 @@
+body {
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: red;
+	}
+	20% {
+		background: orange;
+	}
+	40% {
+		background: yellow;
+	}
+	60% {
+		background: green;
+	}
+	80% {
+		background: blue;
+	}
+	100% {
+		background: purple;
+	}
+}
+
+header{
+    background: linear-gradient(to right, red, orange , yellow, green, blue, purple);
+    font: normal 15pt Arial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 60px;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
